@@ -6,18 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox em CSS</title>
     <style>
-        .container{
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1f76b1;
+        }
+
+        .container {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            background-color: rgb(128, 17, 17);
+            background-color: #e3e9f0;
             padding: 50px;
             flex-wrap: wrap;
             gap: 10px;
             align-items: center;
         }
-        .item{
-            background-color: orange;
+
+        .item {
+            background-color: #ffffff;
             padding: 20px;
             margin: 10px;
             border-radius: 8px;
@@ -25,46 +37,76 @@
             text-align: center;
             width: 300px;
             height: 330px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease;
         }
-        img{
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
             border-radius: 8px;
+        }
+
+        footer {
+            background-color: #e3e9f0;
+            color: rgba(0, 0, 0, 0.582);
         }
     </style>
 </head>
 
 <body>
+    <h1>GALERIA DE IMAGENS</h1>
     <div class="container">
         <div class="item">
-            <img src="img(01).png" alt="Um vale verdejante emoldurado por montanhas majestosas e picos cobertos de neve sob um céu azul.">
+            <img src="img(01).png"
+                alt="Um vale verdejante emoldurado por montanhas majestosas e picos cobertos de neve sob um céu azul.">
             <h3>O Caminho Florido para as Montanhas</h3>
-            <p>Um vale verdejante emoldurado por montanhas majestosas e picos cobertos de neve sob um céu azul. Um rio serpenteia através da paisagem, enquanto em primeiro plano, um caminho passa por campos vibrantes de flores silvestres.</p>
+            <p>Um vale verdejante emoldurado por montanhas majestosas e picos cobertos de neve sob um céu azul. Um rio
+                serpenteia através da paisagem, enquanto em primeiro plano, um caminho passa por campos vibrantes de
+                flores silvestres.</p>
         </div>
         <div class="item">
-            <img src="img(02).png" alt="Uma paisagem montanhosa dramática ao pôr do sol, onde um rio sinuoso corta um vale.">
+            <img src="img(02).png"
+                alt="Uma paisagem montanhosa dramática ao pôr do sol, onde um rio sinuoso corta um vale.">
             <h3>Cabana no Vale do Rio Outonal</h3>
-            <p>Uma paisagem montanhosa dramática ao pôr do sol, onde um rio sinuoso corta um vale coberto de pinheiros e folhagem de outono. Uma pequena cabana rústica com fumaça saindo da chaminé fica em uma colina, com um caminho que leva até ela.</p>
+            <p>Uma paisagem montanhosa dramática ao pôr do sol, onde um rio sinuoso corta um vale coberto de pinheiros e
+                folhagem de outono. Uma pequena cabana rústica com fumaça saindo da chaminé fica em uma colina, com um
+                caminho que leva até ela.</p>
         </div>
         <div class="item">
             <img src="img(03).png" alt="Uma imagem dividida em três partes, mostrando a diversidade da natureza.">
-            <h3>3. A Tríplice Paisagem</h3>
-            <p>ma composição dividida em três partes, mostrando a diversidade da natureza: montanhas majestosas com rios, colinas verdes à beira-mar com um farol, e um deserto árido com dunas e cactos.</p>
+            <h3>A Tríplice Paisagem</h3>
+            <p>ma composição dividida em três partes, mostrando a diversidade da natureza: montanhas majestosas com
+                rios, colinas verdes à beira-mar com um farol, e um deserto árido com dunas e cactos.</p>
         </div>
         <div class="item">
-            <img src="img(04).png" alt="Imagem de um vasto campo florido ao nascer do sol, com uma única árvore majestosa em uma colina.">
+            <img src="img(04).png"
+                alt="Imagem de um vasto campo florido ao nascer do sol, com uma única árvore majestosa em uma colina.">
             <h3>Amanhecer sobre os Campos Nebulosos</h3>
-            <p>Um cenário sereno de um vasto campo florido ao nascer do sol, com uma única árvore majestosa em uma colina. Montanhas distantes e um vale encoberto por uma névoa suave adicionam profundidade à paisagem iluminada.</p>
+            <p>Um cenário sereno de um vasto campo florido ao nascer do sol, com uma única árvore majestosa em uma
+                colina. Montanhas distantes e um vale encoberto por uma névoa suave adicionam profundidade à paisagem
+                iluminada.</p>
         </div>
         <div class="item">
-            <img src="img(05).png" alt=" imagem de Um amplo vale com um rio sinuoso que se estende por campos verdes e amarelos, pontilhados por flores coloridas.">
+            <img src="img(05).png"
+                alt=" imagem de Um amplo vale com um rio sinuoso que se estende por campos verdes e amarelos, pontilhados por flores coloridas.">
             <h3>O Rio Curvo e os Campos Floridos</h3>
-            <p>Um amplo vale com um rio sinuoso que se estende por campos verdes e amarelos, pontilhados por flores coloridas. Ao fundo, uma cadeia de montanhas escarpadas adiciona uma sensação de grandiosidade à paisagem.</p>
+            <p>Um amplo vale com um rio sinuoso que se estende por campos verdes e amarelos, pontilhados por flores
+                coloridas. Ao fundo, uma cadeia de montanhas escarpadas adiciona uma sensação de grandiosidade à
+                paisagem.</p>
         </div>
         <div class="item">
-            <img src="img(06).png" alt="Imagem de Um observador solitário em um pico rochoso contempla um vasto vale montanhoso.">
+            <img src="img(06).png"
+                alt="Imagem de Um observador solitário em um pico rochoso contempla um vasto vale montanhoso.">
             <h3>Contemplação no Vale Outonal</h3>
-            <p>Um observador solitário em um pico rochoso contempla um vasto vale montanhoso. Um rio sinuoso corta a paisagem de florestas de pinheiros e árvores com folhagem dourada de outono, tudo sob um céu parcialmente nublado com raios de sol.</p>
+            <p>Um observador solitário em um pico rochoso contempla um vasto vale montanhoso. Um rio sinuoso corta a
+                paisagem de florestas de pinheiros e árvores com folhagem dourada de outono, tudo sob um céu
+                parcialmente nublado com raios de sol.</p>
         </div>
     </div>
+    <footer>&copy; 2025 - Todos os Direitos Reservados.</footer>
 </body>
 
 </html>
